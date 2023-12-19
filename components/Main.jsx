@@ -9,7 +9,7 @@ const Main = () => {
       <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center">
         <div>
           <p className="uppercase tracking-widest text-gray-600">
-            Vamos trabalhar juntos
+            Criando visibilidade digital
           </p>
           <h1 className="text-[#5651e5] py-4">Luiz Gustavo Ferreira</h1>
           <h1 className="py-2 text-gray-700">Desenvolvedor Web Front-End</h1>
