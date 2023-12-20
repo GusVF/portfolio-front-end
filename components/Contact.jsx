@@ -11,7 +11,7 @@ import Link from "next/link";
 
 const Contact = () => {
   return (
-    <div className="w-full lg:h-screen">
+    <div id="contact" className="w-full lg:h-screen pt-[6%]">
       <div className="max-w-[1240px] m-auto px-2 py-16 w-full">
         <p className="text-3xl tracking-widest uppercase text-[#5651e5]">
           Contato
@@ -24,7 +24,7 @@ const Contact = () => {
                 <Image
                   className="rounded-xl hover:scale-105 ease-in duration-300"
                   src={contactImg}
-                  alt="/"
+                  alt="contace image"
                 />
               </div>
               <div>
@@ -107,7 +107,10 @@ const Contact = () => {
         <div className="flex justify-center py-12">
           <Link href="/">
             <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 easi-in duration-300">
-              <HiOutlineChevronDoubleUp size={30} className="m-auto text-[#5651e5]"/>
+              <HiOutlineChevronDoubleUp
+                size={30}
+                className="m-auto text-[#5651e5]"
+              />
             </div>
           </Link>
         </div>
