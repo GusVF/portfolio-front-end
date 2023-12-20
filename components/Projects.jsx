@@ -15,7 +15,7 @@ const Projects = () => {
         </p>
         <div className="grid md:grid-cols-2 gap-8">
           <ProjectItem
-            title="Portfolio fotografo"
+            title="Portfolio fotógrafo"
             backgroundImg={photographerImg}
             projectUrl="https://protfolio-fotografo.vercel.app/"
           />

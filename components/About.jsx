@@ -11,7 +11,7 @@ const About = () => {
           <p>
             Bem-vindo ao meu mundo digital, onde transformo ideias em presença
             online impactante para seu negócio ou empresa! Como desenvolvedor
-            front-end freelancer, minha paixão é criar páginas de captura
+            front-end, minha paixão é criar páginas de captura
             (landing pages) e websites incríveis que destacam e impulsionam o
             seu negócio. Trabalho para garantir que sua presença na web não
             apenas seja visualmente atraente, mas também altamente funcional e
