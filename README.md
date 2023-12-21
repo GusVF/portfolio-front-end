@@ -1,40 +1,72 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Portfólio Frontend
+### Visão Geral
+Bem-vindo ao meu portfólio! Este projeto funciona como uma vitrine para minhas habilidades como desenvolvedor front-end. Aqui, utilizei as últimas tecnologias para criar um portfólio dinâmico e visualmente atraente.
 
-## Getting Started
+### Tecnologia
+Next.js (v14.0.4): Desenvolvi este projeto na estrutura do Next.js, aproveitando seus recursos poderosos para renderização no lado do servidor e roteamento eficiente.
 
-First, run the development server:
+React (v18) e React DOM (v18): Utilizando a versão mais recente do React para construir componentes modulares e reutilizáveis, garantindo uma interface de usuário suave e responsiva.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+React Icons (v4.12.0): Integrei o React Icons para aprimorar o apelo visual e fornecer uma iconografia moderna e elegante em todo o portfólio.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Scripts
+dev: Execute npm run dev para iniciar o servidor de desenvolvimento usando o Next.js.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+build: Execute npm run build para gerar uma compilação pronta para produção do portfólio.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+start: Inicie o servidor de produção com npm start.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+lint: Use npm run lint para executar o ESLint e garantir um código limpo e consistente.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Dependências
+Next.js: A estrutura principal para construir aplicações React com renderização no lado do servidor.
 
-## Learn More
+React e React DOM: Bibliotecas fundamentais para construir interfaces de usuário com React.
 
-To learn more about Next.js, take a look at the following resources:
+React Icons: Uma biblioteca que fornece pacotes populares de ícones como componentes React.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Dependências de Desenvolvimento
+Autoprefixer (v10.0.1): Plugin PostCSS para analisar CSS e adicionar automaticamente prefixos de fornecedores.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+ESLint (v8): Uma ferramenta poderosa para identificar e corrigir erros de código e impor estilos de codificação consistentes.
 
-## Deploy on Vercel
+ESLint Config Next (v14.0.4): Configuração do ESLint adaptada para projetos Next.js.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Tailwind CSS (v3.3.0): Um framework CSS utilitário que ajuda a construir rapidamente designs modernos.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+# English version
+### Overview
+Welcome to my portfolio! This project serves as a showcase for my skills as a front-end developer. Here, I've utilized the latest technologies to create a dynamic and visually appealing portfolio.
+
+### Tech Stack
+Next.js (v14.0.4): I've built this project on the Next.js framework, harnessing its powerful features for server-side rendering and efficient routing.
+
+React (v18) and React DOM (v18): Leveraging the latest version of React for building modular and reusable components, ensuring a smooth and responsive user interface.
+
+React Icons (v4.12.0): I've integrated React Icons to enhance the visual appeal and provide a modern and sleek iconography throughout the portfolio.
+
+### Scripts
+dev: Run npm run dev to start the development server using Next.js.
+
+build: Execute npm run build to generate a production-ready build of the portfolio.
+
+start: Launch the production server with npm start.
+
+lint: Use npm run lint to run ESLint and ensure clean and consistent code.
+
+### Dependencies
+Next.js: The core framework for building React applications with server-side rendering.
+
+React and React DOM: Fundamental libraries for building user interfaces with React.
+
+React Icons: A library providing popular icon packs as React components.
+
+Development Dependencies
+Autoprefixer (v10.0.1): PostCSS plugin to parse CSS and add vendor prefixes automatically.
+
+ESLint (v8): A powerful tool for identifying and fixing code errors and enforcing consistent coding styles.
+
+ESLint Config Next (v14.0.4): Configuration for ESLint tailored for Next.js projects.
+
+Tailwind CSS (v3.3.0): A utility-first CSS framework that helps in quickly building modern designs.
+

@@ -1,7 +1,7 @@
 import React from "react";
 
 import photographerImg from "../public/assets/photographer.jpeg";
-import ProjectItem from "./ProjectItem";
+import PhotographerPort from "./PhotographerPort";
 
 const Projects = () => {
   return (
@@ -13,11 +13,12 @@ const Projects = () => {
         <p className="uppercase tracking-widest text-gray-600 pb-5 pt-5">
           Ainda vem mais projetos pela frente...
         </p>
-        <div className="grid md:grid-cols-2 gap-8">
-          <ProjectItem
+        <div className="grid md:grid-cols-2 gap-8 pb-10">
+          {/* Copy and paste a new project here */}
+          <PhotographerPort
             title="Portfolio fotógrafo"
             backgroundImg={photographerImg}
-            projectUrl="https://protfolio-fotografo.vercel.app/"
+            projectUrl="/photographer"
           />
         </div>
       </div>

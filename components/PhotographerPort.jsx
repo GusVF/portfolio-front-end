@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-const ProjectItem = ({ title, backgroundImg, projectUrl }) => {
+const PhotographerPort = ({ title, backgroundImg, projectUrl }) => {
   return (
     <div className="relative flex items-center justify-center h-full w-full shadow-xl shadow-gray-400 rounded-xl p-4 group hover:bg-gradient-to-r from-[#2b24ea] to-[#aac3f7]">
       <Image
@@ -27,4 +27,4 @@ const ProjectItem = ({ title, backgroundImg, projectUrl }) => {
   );
 };
 
-export default ProjectItem;
+export default PhotographerPort;

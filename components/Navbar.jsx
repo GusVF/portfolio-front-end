@@ -3,10 +3,25 @@ import React, { useEffect, useState } from "react";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
+import { useRouter } from "next/router";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
+  const [navBg, setNavBg] = useState("#ecf0f3");
+  const [linkColor, setLinkColor] = useState("#1f2937");
+  const router = useRouter();
+
+  // Need to add the projects to this if statment as I add more project.
+  useEffect(() => {
+    if(router.asPath === '/photographer'){
+      setNavBg('transparent')
+      setLinkColor('#ecf0f3')
+    } else {
+      setNavBg('#ecf0f3')
+      setLinkColor('#1f2937')
+    }
+  },[router])
 
   const handleNav = () => {
     setNav(!nav);
@@ -28,6 +43,7 @@ const Navbar = () => {
 
   return (
     <div
+      style={{backgroundColor: `${navBg}`}}
       className={
         shadow
           ? "fixed w-full h-20 shadow-xl z-[100]"
@@ -35,11 +51,11 @@ const Navbar = () => {
       }
     >
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
-        <Link href='/'>
-        <p className="logo ml-10">Gus Ferreira</p>
+        <Link href="/">
+          <p className="logo ml-10">Gus Ferreira</p>
         </Link>
         <div>
-          <ul className="hidden md:flex mr-10">
+          <ul style={{color: `${linkColor}`}} className="hidden md:flex mr-10">
             <Link href="/">
               <li className="ml-10 text-sm uppercase hover:border-b">Inicio</li>
             </Link>
@@ -81,7 +97,9 @@ const Navbar = () => {
         >
           <div>
             <div className="flex w-full items-center justify-between">
-              <p className="logo ml-5">Gus Ferreira</p>
+              <Link href="/">
+                <p className="logo ml-5">Gus Ferreira</p>
+              </Link>
               <div
                 onClick={handleNav}
                 className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer"
@@ -98,19 +116,19 @@ const Navbar = () => {
           <div className="py-4 flex flex-col">
             <ul className="uppercase">
               <Link href="/">
-                <li className="py-4 text-md ml-5">Inicio</li>
+                <li onClick={() => setNav(false)} className="py-4 text-md ml-5">Inicio</li>
               </Link>
               <Link href="/#about">
-                <li className="py-4 text-md ml-5">Sobre</li>
+                <li onClick={() => setNav(false)} className="py-4 text-md ml-5">Sobre</li>
               </Link>
               <Link href="/#skills">
-                <li className="py-4 text-md ml-5">Tecnologias</li>
+                <li onClick={() => setNav(false)} className="py-4 text-md ml-5">Tecnologias</li>
               </Link>
               <Link href="/#projects">
-                <li className="py-4 text-md ml-5">Projetos</li>
+                <li onClick={() => setNav(false)} className="py-4 text-md ml-5">Projetos</li>
               </Link>
               <Link href="/#contact">
-                <li className="py-4 text-md ml-5">Contato</li>
+                <li onClick={() => setNav(false)} className="py-4 text-md ml-5">Contato</li>
               </Link>
             </ul>
             <div className="pt-40 ">
