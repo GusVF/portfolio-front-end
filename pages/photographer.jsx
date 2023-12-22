@@ -27,7 +27,7 @@ const photographer = () => {
           <p>Projeto</p>
           <h2>Panorama</h2>
           <p>
-            Criei esta landing page com o objetivo de ampliar a presença digital
+            Criei esta pagina de captação com o objetivo de ampliar a presença digital
             de fotógrafos. Utilizei Next.js, Tailwind e hospedei na Vercel para
             garantir eficiência. A página destaca o trabalho dos profissionais,
             oferecendo uma experiência visual única. Se você busca maior
