@@ -1,9 +1,19 @@
+import Image from "next/image";
 import React from "react";
 import { AiOutlineMail } from "react-icons/ai";
-import { BsFillPersonLinesFill } from "react-icons/bs";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 
+import whatsApp from "../public/assets/whatsApp.png";
+
 const Main = () => {
+  const openWhatsApp = () => {
+    const phoneNumber = "+5512996356852";
+    const whatsappLink = `https://wa.me/${phoneNumber}`;
+
+    // Open the WhatsApp link in a new tab
+    window.open(whatsappLink, "_blank");
+  };
+
   return (
     <div id="home" className="w-full h-screen text-center">
       <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center">
@@ -20,17 +30,44 @@ const Main = () => {
             habilidades em Back-End.&quot;
           </p>
           <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
-            <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 easi-in duration-300">
-              <FaLinkedinIn />
-            </div>
-            <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 easi-in duration-300">
-              <FaGithub />
-            </div>
-            <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 easi-in duration-300">
-              <AiOutlineMail />
-            </div>
-            <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 easi-in duration-300">
-              <BsFillPersonLinesFill />
+            <a
+              href="https://www.linkedin.com/in/luiz-gustavo-ferreira-gusferreira/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 easi-in duration-300">
+                <FaLinkedinIn />
+              </div>
+            </a>
+            <a
+              href="https://github.com/GusVF"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 easi-in duration-300">
+                <FaGithub />
+              </div>
+            </a>
+            <a
+              href="mailto:gus.116506@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 easi-in duration-300">
+                <AiOutlineMail />
+              </div>
+            </a>
+            <div
+              onClick={openWhatsApp}
+              className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 easi-in duration-300"
+            >
+              <Image
+                src={whatsApp}
+                target="_blank"
+                width={25}
+                height={25}
+                alt="WhatsApp"
+              />
             </div>
           </div>
         </div>
