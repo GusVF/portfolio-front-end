@@ -4,44 +4,47 @@ import contactImg from "../public/assets/contactImg.jpeg";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
-
 import whatsApp from "../public/assets/whatsApp.png";
-
 import Link from "next/link";
 
 const Contact = () => {
   const openWhatsApp = () => {
     const phoneNumber = "+5512996356852";
     const whatsappLink = `https://wa.me/${phoneNumber}`;
-
-    // Open the WhatsApp link in a new tab
     window.open(whatsappLink, "_blank");
   };
 
   return (
-    <div id="contact" className="w-full pt-[4%]">
-      <div className="ml-[30%] flex flex-col justify-center items-center m-auto py-16 w-full">
-        <div className="grid lg:grid-cols-5 gap-8">
-          <div className="col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-2">
-            <div className="lg:p-4 h-full">
-              <div>
-                <h2 className="ml-[15%] pb-5 text-3xl tracking-widest uppercase text-[#5651e5]">
-                  Opções de contato
-                </h2>
+    <div id="contact" className="w-full mt-[-5%]">
+      <div className="flex flex-col justify-center items-center m-auto py-16 w-full">
+        <div className="w-[96%] h-full shadow-xl shadow-gray-400 rounded-xl p-2 lg:px-8">
+          <div className="grid lg:grid-cols-5 gap-8">
+            {/* Image on the left */}
+            <div className="lg:col-span-2 w-full h-full">
+              <div className="lg:p-4 h-full">
                 <Image
                   className="rounded-xl hover:scale-105 ease-in duration-300"
                   src={contactImg}
-                  alt="contace image"
+                  alt="contact image"
                 />
-                <p className="py-3">
+              </div>
+            </div>
+
+            {/* Text content on the right */}
+            <div className="lg:col-span-3 w-full h-full">
+              <div className="lg:p-4 h-full">
+                <h2 className="pb-5 text-3xl tracking-widest uppercase text-[#5651e5]">
+                  Opções de contato
+                </h2>
+                <p className="py-1">
                   Vamos conversar sobre sua presença digital!
                 </p>
-                <p className="pt-2">
-                  Contato, informações e codigo de projetos
+                <p className="pt-1">
+                  Contato, informações e código de projetos
                 </p>
-              </div>
-              <div>
-                <div className="flex items-center justify-between py-4">
+
+                {/* Social icons */}
+                <div className="flex items-center justify-between pt-[10%]">
                   <a
                     href="https://www.linkedin.com/in/luiz-gustavo-ferreira-gusferreira/"
                     target="_blank"
@@ -86,16 +89,18 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <div className="mr-[60%] pt-9">
-          <Link href="/">
-            <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 easi-in duration-300">
-              <HiOutlineChevronDoubleUp
-                size={20}
-                className="m-auto text-[#5651e5]"
-              />
-            </div>
-          </Link>
-        </div>
+      </div>
+      
+      {/* Back to top link */}
+      <div className="flex justify-center mb-[5%]">
+        <Link href="/">
+          <div className="rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 easi-in duration-300">
+            <HiOutlineChevronDoubleUp
+              size={15}
+              className="m-auto text-[#5651e5]"
+            />
+          </div>
+        </Link>
       </div>
     </div>
   );
