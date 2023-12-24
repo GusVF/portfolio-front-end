@@ -19,7 +19,7 @@ const Contact = () => {
   };
 
   return (
-    <div id="contact" className="w-full pt-5">
+    <div id="contact" className="w-full pt-[4%]">
       <div className="ml-[30%] flex flex-col justify-center items-center m-auto py-16 w-full">
         <div className="grid lg:grid-cols-5 gap-8">
           <div className="col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-2">
@@ -33,17 +33,14 @@ const Contact = () => {
                   src={contactImg}
                   alt="contace image"
                 />
-              </div>
-              <div>
-                <h2 className="py-2">Luiz Gustavo Ferreira</h2>
                 <p className="py-3">
                   Vamos conversar sobre sua presença digital!
                 </p>
-              </div>
-              <div>
                 <p className="pt-2">
                   Contato, informações e codigo de projetos
                 </p>
+              </div>
+              <div>
                 <div className="flex items-center justify-between py-4">
                   <a
                     href="https://www.linkedin.com/in/luiz-gustavo-ferreira-gusferreira/"
@@ -89,11 +86,11 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <div className="flex justify-center py-12">
+        <div className="mr-[60%] pt-9">
           <Link href="/">
             <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 easi-in duration-300">
               <HiOutlineChevronDoubleUp
-                size={30}
+                size={20}
                 className="m-auto text-[#5651e5]"
               />
             </div>
