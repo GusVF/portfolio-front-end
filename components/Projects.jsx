@@ -1,7 +1,10 @@
 import React from "react";
 
 import photographerImg from "../public/assets/photographer.jpeg";
+import oldPortfolio from "../public/assets/oldportfolio.jpeg";
+
 import PhotographerPort from "./PhotographerPort";
+import OldPortfolio from "./OldPortfolio";
 
 const Projects = () => {
   return (
@@ -19,6 +22,11 @@ const Projects = () => {
             title="Portfolio fotógrafo"
             backgroundImg={photographerImg}
             projectUrl="/photographer"
+          />
+          <OldPortfolio 
+          title="Primeiro Portfolio"
+          backgroundImg={oldPortfolio}
+          projectUrl="/oldportfolio"
           />
         </div>
       </div>

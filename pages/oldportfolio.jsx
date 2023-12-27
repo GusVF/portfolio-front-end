@@ -1,11 +1,11 @@
 import Image from "next/image";
 import React from "react";
 import { RiRadioButtonFill } from "react-icons/ri";
-
-import photographerImg from "../public/assets/photographer.jpeg";
 import Link from "next/link";
 
-const photographer = () => {
+import oldPortfolioImg from "../public/assets/oldPortfolio.jpeg";
+
+const OldPortfolio = () => {
   return (
     <div className="w-full">
       <div className="w-screen h-[30vh] lg:w-full lg:h-[40vh] relative">
@@ -14,34 +14,33 @@ const photographer = () => {
           className="absolute z-1"
           layout="fill"
           objectFit="cover"
-          src={photographerImg}
-          alt="photographerImg"
+          src={oldPortfolioImg}
+          alt="oldPortfolioImg"
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
-          <h2 className="py-2">Portfolio Fotógrafo</h2>
-          <h3>Next.js/tailwind/Vercel</h3>
+          <h2 className="py-2 text-white">Portfolio</h2>
+          <h3 className="text-white">React/JavaScript/Bulma</h3>
         </div>
       </div>
+
+      {/* Main content section */}
       <div className="max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 pt-8">
-        <div className="col-span-4 ">
+        <div className="col-span-4">
           <p>Projeto</p>
           <h2>Panorama</h2>
           <p>
-            Criei esta pagina de captação com o objetivo de ampliar a presença digital
-            de fotógrafos. Utilizei Next.js, Tailwind e hospedei na Vercel para
-            garantir eficiência. A página destaca o trabalho dos profissionais,
-            oferecendo uma experiência visual única. Se você busca maior
-            visibilidade online, esta plataforma é a chave.
+            Este foi meu primeiro Portfolio. Utilizando React, JavaScript e
+            Bulma.
           </p>
           <a
-            href="https://protfolio-fotografo.vercel.app/"
+            href="https://gusvf.github.io/portfolio/"
             target="_blank"
             rel="noopener noreferrer"
           >
-          <button className="px-8 py-2 mt-4 mr-8">Demo</button>
+            <button className="px-8 py-2 mt-4 mr-8">Demo</button>
           </a>
           <a
-            href="https://github.com/GusVF/Protfolio-Fotografo"
+            href="https://github.com/GusVF/portfolio"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -54,29 +53,25 @@ const photographer = () => {
             <div className="grid grid-cols-3 md:grid-cols-1">
               <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" />
-                Next.js
+                React
               </p>
               <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" />
-                javaScript
+                JavaScript
               </p>
               <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" />
-                tailwind
-              </p>
-              <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" />
-                Vercel
+                Bulma
               </p>
             </div>
           </div>
         </div>
         <Link href="/#projects">
-          <p className="underline curson-pointer">voltar aos projetos</p>
+          <p className="underline cursor-pointer">voltar aos projetos</p>
         </Link>
       </div>
     </div>
   );
 };
 
-export default photographer;
+export default OldPortfolio;
