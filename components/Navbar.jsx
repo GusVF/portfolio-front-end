@@ -12,7 +12,7 @@ const Navbar = () => {
   const [linkColor, setLinkColor] = useState("#1f2937");
   const router = useRouter();
 
-  // Need to add the projects to this if statement as I add more project.
+  // Need to add the project route to this if statement for nav bar to work.
   useEffect(() => {
     if(router.asPath === '/photographer' || router.asPath === '/oldportfolio'){
       setNavBg('transparent')
