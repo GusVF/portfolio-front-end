@@ -50,7 +50,7 @@ const Contact = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 easi-in duration-300">
+                    <div className="rounded-full shadow-lg shadow-gray-600 p-6 cursor-pointer hover:scale-110 easi-in duration-300">
                       <FaLinkedinIn size={15} />
                     </div>
                   </a>
@@ -59,7 +59,7 @@ const Contact = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 easi-in duration-300">
+                    <div className="rounded-full shadow-lg shadow-gray-600 p-6 cursor-pointer hover:scale-110 easi-in duration-300">
                       <FaGithub size={15} />
                     </div>
                   </a>
@@ -68,13 +68,13 @@ const Contact = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 easi-in duration-300">
+                    <div className="rounded-full shadow-lg shadow-gray-600 p-6 cursor-pointer hover:scale-110 easi-in duration-300">
                       <AiOutlineMail size={15} />
                     </div>
                   </a>
                   <div
                     onClick={openWhatsApp}
-                    className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 easi-in duration-300"
+                    className="rounded-full shadow-lg shadow-gray-600 p-6 cursor-pointer hover:scale-110 easi-in duration-300"
                   >
                     <Image
                       src={whatsApp}
