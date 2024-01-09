@@ -1,7 +1,7 @@
 import React from "react";
 
 import photographerImg from "../public/assets/photographer.jpeg";
-import oldPortfolio from "../public/assets/oldportfolio.jpeg";
+import oldPortfolio from "../public/assets/oldPortfolio.jpeg";
 
 import PhotographerPort from "./PhotographerPort";
 import OldPortfolio from "./OldPortfolio";
